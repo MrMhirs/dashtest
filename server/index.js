@@ -9,6 +9,7 @@ import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
+import OverallStat from "./models/OverallStat.js";
 
 // ---------------- DATA IMPORTS ------------------
 import User from "./models/User.js";
@@ -19,6 +20,7 @@ import {
   dataProduct,
   dataProductStat,
   dataTransaction,
+  dataOverallStat,
 } from "./data/index.js";
 import Transaction from "./models/Transaction.js";
 
@@ -51,6 +53,7 @@ mongoose
     app.listen(PORT, () => console.log(`Connected to Server Port: ${PORT}`));
 
     // ---------------- Only Add data one time ------------------
+    // OverallStat.insertMany(dataOverallStat);
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
     // Transaction.insertMany(dataTransaction);
