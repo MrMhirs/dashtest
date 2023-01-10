@@ -101,7 +101,7 @@ const Transactions = () => {
           onSortModelChange={(newSortModel) => setSort(...newSortModel)}
           components={{ Toolbar: DataGridCustomToolbar }}
           componentsProps={{
-            toolbar: { searchInput, setSearchInput, setSearch },
+            toolbar: {searchInput, setSearchInput, setSearch},
           }}
         />
       </Box>

@@ -4,13 +4,13 @@ import { IconButton, TextField, InputAdornment } from "@mui/material";
 import {
   GridToolbarDensitySelector,
   GridToolbarContainer,
-  GridtoolbarExport,
-  GridToolbarColumnsButton,
   GridToolbarExport,
+  GridToolbarColumnsButton
+
 } from "@mui/x-data-grid";
 import FlexBetween from "./FlexBetween";
 
-const DataGridCustomToolbar = (searchInput, setSearchInput, setSearch) => {
+const DataGridCustomToolbar = ({searchInput, setSearchInput, setSearch}) => {
   return (
     <GridToolbarContainer>
       <FlexBetween width="100%">
