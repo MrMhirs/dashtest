@@ -78,7 +78,7 @@ export const getGeography = async (req, res) => {
   try {
     const users = await User.find();
 
-    const mappedLocations = user.reduce((acc, {country}) => {
+    const mappedLocations = users.reduce((acc, {country}) => {
       const countryISO3 = getCountryIso3(country);
       if(!acc[countryISO3]){
         acc[countryISO3] = 0;
@@ -92,6 +92,7 @@ export const getGeography = async (req, res) => {
         return { id: country, value: count}
       }
     );
+    
     res.status(200).json(formattedLocation);
   } catch (error) {
     res.status(404).json({ message: error.message });
