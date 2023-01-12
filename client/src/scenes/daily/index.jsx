@@ -151,6 +151,7 @@ const Daily = () => {
             useMesh={true}
             legends={[
               {
+                
                 anchor: "top-right",
                 direction: "column",
                 justify: false,
