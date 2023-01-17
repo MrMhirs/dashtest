@@ -55,7 +55,7 @@ mongoose
     app.listen(PORT, () => console.log(`Connected to Server Port: ${PORT}`));
 
     // ---------------- Only Add data one time ------------------
-    AffiliateStat.insertMany(dataAffiliateStat);
+    // AffiliateStat.insertMany(dataAffiliateStat);
     // OverallStat.insertMany(dataOverallStat);
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
